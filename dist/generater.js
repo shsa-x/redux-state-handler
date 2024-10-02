@@ -18,12 +18,14 @@ var State = /** @class */ (function () {
     }
     State.prototype.getState = function () {
         var _this = this;
-        return useSelector(function (state) { return state.statex[_this.stateName]; });
+        this.currentState = useSelector(function (state) { return state.statex[_this.stateName]; });
+        return this.currentState;
     };
-    State.prototype.setState = function (val) {
+    State.prototype.setState = function (callback) {
         if (dispatch) {
             var actions = useStore().actions;
-            dispatch(actions[this.stateName](val));
+            var newState = callback(this.currentState);
+            dispatch(actions[this.stateName](newState));
         }
     };
     return State;

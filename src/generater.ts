@@ -33,6 +33,7 @@ let count: number = 1;
 class State{
 
     stateName: string;
+    currentState: any;
 
     constructor( initialState: any ){
 
@@ -45,15 +46,18 @@ class State{
     }
 
     getState(): any {
-        return useSelector((state: Statex) => state.statex[this.stateName]);
+        this.currentState = useSelector((state: Statex) => state.statex[this.stateName]);
+        return this.currentState;
     }
 
-    setState(val: any): void {
+
+    setState(callback: (currentState: any) => any): void {
         if (dispatch) {
-            const { actions } = useStore(); 
-            dispatch(actions[this.stateName](val)); 
+        const { actions } = useStore();
+        const newState = callback(this.currentState);
+        dispatch(actions[this.stateName](newState));
         }
-    }
+  }
 
 }
 

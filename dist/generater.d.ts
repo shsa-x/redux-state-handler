@@ -13,9 +13,10 @@ declare const localStates: LocalState;
 export declare const setDispatch: (val: any) => void;
 declare class State {
     stateName: string;
+    currentState: any;
     constructor(initialState: any);
     getState(): any;
-    setState(val: any): void;
+    setState(callback: (currentState: any) => any): void;
 }
 export { localStates, localReducers };
 export default State;
