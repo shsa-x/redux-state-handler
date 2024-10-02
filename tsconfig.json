@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "ES5",                          // JavaScript version to compile to
+    "module": "ES6",                          // Use ES modules
+    "jsx": "react",                           // Enable JSX support for React
+    "declaration": true,                      // Generate type declaration files
+    "declarationDir": "./dist",               // Output directory for declaration files
+    "outDir": "./dist",                       // Output directory for compiled JS files
+    "strict": true,                           // Enable strict type checking
+    "esModuleInterop": true,                  // Enable import/export interop
+    "skipLibCheck": true,                     // Skip checking library files
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file naming
+    "jsxFactory": "React.createElement",      // For React JSX (or `h` for Preact)
+    "jsxFragmentFactory": "React.Fragment"    // For React Fragments
+  },
+  "include": ["src/**/*"],                    // Include all TypeScript files in src directory
+  "exclude": ["node_modules", "dist"]         // Exclude unnecessary directories
+  
+}
