@@ -1,9 +1,11 @@
 {
   "name": "redux-state-handler",
-  "version": "1.1.0",
-  "description": "A brief description of your library",
+  "version": "1.1.1",
+  "description": " A Redux-based state management library designed to simplify state handling in React applications.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "author": "Shivam Sahu",
+  "repository": "https://github.com/shsa-x/redux-state-handler.git",
   "scripts": {
     "build": "tsc"
   },

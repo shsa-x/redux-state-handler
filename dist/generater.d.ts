@@ -16,7 +16,7 @@ declare class State {
     currentState: any;
     constructor(initialState: any);
     getState(): any;
-    setState(callback: (currentState: any) => any): void;
+    setState(valueOrCallback: (currentState: any) => any): void;
 }
 export { localStates, localReducers };
 export default State;

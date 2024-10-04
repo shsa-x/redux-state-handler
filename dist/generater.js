@@ -21,11 +21,18 @@ var State = /** @class */ (function () {
         this.currentState = useSelector(function (state) { return state.statex[_this.stateName]; });
         return this.currentState;
     };
-    State.prototype.setState = function (callback) {
+    State.prototype.setState = function (valueOrCallback) {
         if (dispatch) {
             var actions = useStore().actions;
-            var newState = callback(this.currentState);
+            var newState = void 0;
+            if (typeof valueOrCallback === 'function') {
+                newState = valueOrCallback(this.currentState);
+            }
+            else {
+                newState = valueOrCallback;
+            }
             dispatch(actions[this.stateName](newState));
+            this.currentState = newState;
         }
     };
     return State;

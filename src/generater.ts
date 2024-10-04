@@ -51,11 +51,17 @@ class State{
     }
 
 
-    setState(callback: (currentState: any) => any): void {
+    setState(valueOrCallback: (currentState: any) => any): void {
         if (dispatch) {
         const { actions } = useStore();
-        const newState = callback(this.currentState);
+        let newState;
+        if (typeof valueOrCallback === 'function') {
+            newState = valueOrCallback(this.currentState);  
+        } else {
+            newState = valueOrCallback;  
+        }
         dispatch(actions[this.stateName](newState));
+        this.currentState = newState;
         }
   }
 
