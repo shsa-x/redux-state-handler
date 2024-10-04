@@ -1,6 +1,7 @@
 # Redux State Handler
 
-Redux State Handler is a powerful library that simplifies state management in React applications through its intuitive `getState()` and `setState()` methods. It provides a centralized store for managing state, making it an good choice for applications.
+Redux State Handler is a powerful library that simplifies state management in React applications through its intuitive `getState()` and `setState()` methods. By providing a centralized store for managing state, it enhances the usability of Redux, making it easier for developers to implement state management in their applications. This library abstracts the complexities of Redux, allowing you to focus on building your app without getting bogged down by boilerplate code and configurations. Whether you’re managing simple state or complex application data, Redux State Handler is an excellent choice for a wide range of applications.
+
 
 ## Table of Contents
 
@@ -38,6 +39,11 @@ You can install the library via npm:
 
 ```bash
 npm install redux-state-handler
+```
+or, can install with prerequisites
+
+```bash
+npm install redux-state-handler react-redux @reduxjs/toolkit
 ```
 
 
@@ -114,7 +120,7 @@ We welcome your contributions to the Redux State Handler library! Whether it's a
 
 We’d love to hear from you! If you have any questions, feedback, or suggestions regarding the Redux State Handler library, please feel free to reach out:
 
-- **Email**: [mial](mailto:shivamsahu.tech@gmail.com)
+- **Email**: [emial](mailto:shivamsahu.tech@gmail.com)
 - **Linkedin**: [shsax](https://www.linkedin.com/in/shsax)
 - **Twitter**: [@shsa_X](https://x.com/shsa_X)
 
