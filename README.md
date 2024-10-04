@@ -15,7 +15,6 @@ This library abstracts the complexities of Redux, allowing you to focus on build
   - [2. Wrapping Your Application](#2-wrapping-your-application)
   - [3. Using the State](#3-using-the-state)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 
