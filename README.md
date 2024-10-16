@@ -121,7 +121,7 @@ We welcome your contributions to the Redux State Handler library! Whether it's a
 
 We’d love to hear from you! If you have any questions, feedback, or suggestions regarding the Redux State Handler library, please feel free to reach out:
 
-- **Email**: [emial](mailto:shivamsahu.tech@gmail.com)
+- **Email**: [email](mailto:shivamsahu.tech@gmail.com)
 - **Linkedin**: [shsax](https://www.linkedin.com/in/shsax)
 - **Twitter**: [@shsa_X](https://x.com/shsa_X)
 
